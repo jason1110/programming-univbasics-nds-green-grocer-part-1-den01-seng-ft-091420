@@ -18,6 +18,7 @@ tallied_cart = []
 
 cart.each do |hash|
 hash.each do |key, value|
+binding.pry
   if key == :item
    value ? hash_with_count[:count] += 1 : hash_with_count[:count] = 1
 binding.pry
