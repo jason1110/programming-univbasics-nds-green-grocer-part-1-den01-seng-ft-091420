@@ -13,13 +13,13 @@ item
 end
 
 def consolidate_cart(cart)
-hash_with_count 
+hash_with_count = {}
 tallied_cart = []
 
 cart.each do |hash|
 hash.each do |key, value|
   if key == :item
-   value ? hash["count"] += 1 : hash["count"] = 1
+   value ? hash_with_count[:count] += 1 : hash_with_count[:count] = 1
 binding.pry
   end
 end
