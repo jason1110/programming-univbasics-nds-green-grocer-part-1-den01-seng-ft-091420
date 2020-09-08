@@ -29,9 +29,8 @@ tallied_cart = []
         }
       tallied_cart << find_item  
       end  
-binding.pry
     end
-
+tallied_cart
 binding.pry
 end
 
