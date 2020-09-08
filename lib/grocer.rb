@@ -31,5 +31,3 @@ tallied_cart = []
     end
 tallied_cart
 end
-
-#binding.pry
