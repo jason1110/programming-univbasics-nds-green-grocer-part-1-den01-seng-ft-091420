@@ -17,7 +17,7 @@ hash_with_count = {}
 tallied_cart = []
 
 cart.each do |hash|
-find_item = find_item_by_name_in_collection(cart[hash][:item]),
+find_item = find_item_by_name_in_collection(cart[hash][:item],tallied_cart)
 binding.pry
   end
 
