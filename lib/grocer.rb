@@ -18,7 +18,8 @@ tallied_cart = []
 
 cart.each do |hash|
 find_item = find_item_by_name_in_collection(hash[:item],tallied_cart)
-if find_item = 
+if find_item == nil
+  
 binding.pry
   end
 
