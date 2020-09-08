@@ -13,7 +13,7 @@ item
 end
 
 def consolidate_cart(cart)
- 
+hash_with_count 
 tallied_cart = []
 
 cart.each do |hash|
