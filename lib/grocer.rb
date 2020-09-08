@@ -16,12 +16,21 @@ def consolidate_cart(cart)
 hash_with_count = {}
 tallied_cart = []
 
-cart.each do |hash|
-find_item = find_item_by_name_in_collection(hash[:item],tallied_cart)
-if find_item == nil
-  
+  cart.each do |hash|
+    find_item = find_item_by_name_in_collection(hash[:item],tallied_cart)
+      if find_item
+        find_item[:count] += 1
+      else
+        find_item = {
+          :item => hash[:item],
+          :price => hash[:price],
+          :clearance => hash[:clearance],
+          :count => 1
+        }
+      tallied_cart << find_item  
+      end  
 binding.pry
-  end
+    end
 
 binding.pry
 end
