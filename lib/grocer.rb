@@ -21,7 +21,6 @@ find_item = find_item_by_name_in_collection(cart[hash][:item])
 binding.pry
   end
 end
-end
 
 binding.pry
 end
