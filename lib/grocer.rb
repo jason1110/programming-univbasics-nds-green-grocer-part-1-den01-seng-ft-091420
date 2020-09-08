@@ -13,7 +13,6 @@ item
 end
 
 def consolidate_cart(cart)
-hash_with_count = {}
 tallied_cart = []
 
   cart.each do |hash|
@@ -31,7 +30,6 @@ tallied_cart = []
       end  
     end
 tallied_cart
-binding.pry
 end
 
 #binding.pry
